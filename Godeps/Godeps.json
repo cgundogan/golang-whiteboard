@@ -1,0 +1,11 @@
+{
+	"ImportPath": "github.com/cgundogan/golang-whiteboard",
+	"GoVersion": "go1.2.1",
+	"Deps": [
+		{
+			"ImportPath": "code.google.com/p/go.net/websocket",
+			"Comment": "null-117",
+			"Rev": "c17ad62118ea511e1051721b429779fa40bddc74"
+		}
+	]
+}
