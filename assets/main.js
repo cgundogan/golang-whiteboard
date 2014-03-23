@@ -26,7 +26,7 @@ $(function () {
         conn = null;
 
         if (window["WebSocket"]) {
-                conn = new WebSocket("ws://localhost:8080/json");
+                conn = new WebSocket("ws://" + window.document.location.host + "/json");
 
                 conn.onclose = function(evt) {
                         alert('connection closed');
