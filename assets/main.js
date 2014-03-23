@@ -3,6 +3,7 @@ $(function () {
         var ctx = canvas.getContext('2d');
 
         var isDrawing = false;
+        ctx.strokeStyle = 'red';
 
         canvas.onmousedown = function(e) {
                 isDrawing = true;
