@@ -3,6 +3,7 @@ package main
 import (
         "log"
         "net/http"
+        "os"
         "code.google.com/p/go.net/websocket"
 )
 
@@ -52,5 +53,5 @@ func main() {
         log.Println("starting server..")
         http.Handle("/json", websocket.Handler(jsonServer))
         http.Handle("/", http.FileServer(http.Dir("assets")))
-        log.Fatal(http.ListenAndServe(":8080", nil))
+        log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), nil))
 }
